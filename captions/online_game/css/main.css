@@ -1,0 +1,356 @@
+#mute_btn{
+  color:white;
+
+}
+.score_line{
+  float:left;
+}
+.warning{
+  display: block;
+  margin-top: 20%;
+  margin-bottom:20%;
+  margin-left: auto;
+  margin-right: auto;
+  width:40%;
+  height:40%;
+}
+/*@media only screen and (max-height:600px) and (orientation:landscape){
+    #main{
+      display:none;
+    }
+    #warning_portrait{
+      display: block;
+    }
+    #warning_landscape{
+      display: none;
+    }
+  }
+
+@media only screen and (max-width:600px) and (orientation:portrait){
+  #main{
+    display:block;
+  }
+  #warning_portrait{
+    display: none;
+  }
+  #warning_landscape{
+    display: none;
+  }
+}
+
+@media only screen and (min-width:768px) and (orientation:portrait){
+  #main{
+    display:none;
+  }
+  #warning_portrait{
+    display: block;
+  }
+  #warning_landscape{
+    display:none;
+  }
+}
+@media only screen and (min-width:768px) and (orientation:portrait){
+  #main{
+    display:block;
+  }
+  #warning_portrait{
+    display: none;
+  }
+  #warning_landscape{
+    display:none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #main{
+    display:block;
+  }
+  #warning_portrait{
+    display: none;
+  }
+  #warning_landscape{
+    display: none;
+  }
+}
+@media only screen and (min-height: 768px) {
+#main{
+  display:block;
+}
+#warning_portrait{
+  display: none;
+}
+#warning_landscape{
+  display: none;
+}
+}*/
+/* Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) and (orientation:landscape) {
+  #main{
+    display:none;
+  }
+  #warning_portrait{
+    display: block;
+  }
+  #warning_landscape{
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 600px) and (orientation:portrait) {
+  #main{
+    display:block;
+  }
+  #warning_portrait{
+    display: none;
+  }
+  #warning_landscape{
+    display: none;
+  }
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) and (orientation:portrait){
+  #main{
+    display:none;
+  }
+  #warning_portrait{
+    display: none;
+  }
+  #warning_landscape{
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 600px) and (orientation:landscape){
+  #main{
+    display:block;
+  }
+  #warning_portrait{
+    display: none;
+  }
+  #warning_landscape{
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) and (orientation:portrait){
+  #main{
+    display:none;
+  }
+  #warning_portrait{
+    display: none;
+  }
+  #warning_landscape{
+    display: block;
+  }
+}
+
+@media only screen and (min-height: 768px) and (orientation:landscape){
+  #main{
+    display:block;
+  }
+  #warning_portrait{
+    display: none;
+  }
+  #warning_landscape{
+    display: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {
+  #main{
+    display:block;
+  }
+  #warning_portrait{
+    display: none;
+  }
+  #warning_landscape{
+    display: none;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {
+  #main{
+    display:block;
+  }
+  #warning_portrait{
+    display: none;
+  }
+  #warning_landscape{
+    display: none;
+  }
+}
+*/
+
+
+
+
+
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  #main{
+    display: block;
+  }
+  #warning_portrait{
+    display: none;
+  }
+  #warning_landscape{
+    display: none;
+  }
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  #main{
+    display: block;
+  }
+  #warning_portrait{
+    display: none;
+  }
+  #warning_landscape{
+    display: none;
+  }
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  #main{
+    display: none;
+  }
+  #warning_portrait{
+    display: none;
+  }
+  #warning_landscape{
+    display: block;
+  }
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  #main{
+    display: block;
+  }
+  #warning_portrait{
+    display: none;
+  }
+  #warning_landscape{
+    display: none;
+  }
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+
+  #main{
+    display: none;
+  }
+  #warning_portrait{
+    display: block;
+  }
+  #warning_landscape{
+    display: none;
+  }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  //CSS
+
+}
+
+
+
+
+
+
+body{
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#score{
+  display: inline;
+  float:left;
+  color:red;
+  position: absolute;
+  right:5%;
+  top:1%;
+}
+.upper_btn{
+  float: left;
+}
+.btn_group{
+  margin-top: 0%;
+}
+.btn{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+#btn1{
+  position: absolute;
+  top:30%;
+  left:45%;
+}
+#btn2{
+  position: absolute;
+  bottom:10%;
+  left:12.5%;
+}
+#btn3{
+  position: absolute;
+  bottom:10%;
+  left:45%;
+}
+#btn4{
+  position: absolute;
+  bottom:10%;
+  right:12.5%;
+}
+
+.btnlis{
+  height:200px;
+  width:200px;
+}
+.btnimg{
+  height: 150px;
+  width: 150px;
+}

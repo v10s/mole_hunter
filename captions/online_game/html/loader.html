@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body >
+    <audio id="myaudio" >
+      <source src="../res1/audio/load.mp3" type="audio/mpeg">
+    </audio>
+    <div >
+      <img id="load" src="../res1/images/skull.jpg" alt="" style="margin-top:20%;display:block;margin:auto;width:50%;height:40%;">
+    </div>
+    <script type="text/javascript">
+        var i = .1;
+        var j = 50;
+        _play();
+
+
+        var inter =setInterval(anim,001);
+
+        function _play(){
+          document.getElementById("myaudio").play();
+        }
+
+        function anim(){
+
+          i = i+.5;
+          var str = "rotate("+String(i)+"deg)";
+          document.getElementById("load").style.transform=str;
+          document.getElementById("load").style.width = String(j)+"%";
+          j = j-0.03;
+          if (i>=360){
+            clearInterval(inter);
+            document.getElementById("myaudio").pause();
+            window.open("main.html","_self");
+          }
+        }
+    </script>
+  </body>
+</html>

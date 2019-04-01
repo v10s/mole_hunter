@@ -1,0 +1,6 @@
+display initial frame
+trigger GAME
+start at level 1
+start  GAME
+either game over or next level or continue
+next level leads to new image set new time-set but 

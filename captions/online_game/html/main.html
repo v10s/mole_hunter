@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="../res/images/logo.png">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>mole hunter</title>
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <script type="text/javascript" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script type="text/javascript">
+      @import "@material/icon-button/mdc-icon-button";
+    </script>
+  </head>
+  <body id="body" onkeydown="click1(event)">
+    <div id="main">
+
+      <script type="text/javascript" src="../js/main.js">
+
+      </script>
+
+
+      <audio src="../res/audio/morning.mp3" type="audio/mpeg" id="background_audio">
+
+      </audio>
+
+      <audio src="../res/audio/morning.mp3" type="audio/mpeg" id="mole">
+
+      </audio>
+
+
+
+      <div style="height:100%;width:100%;">
+        <!--<img class="mdc-image-list__image" src="../res/images/night_sky.png"></img>-->
+
+        <div id="score">
+          <h1 class="mdc-typography--headline5  upper_btn">SCORE <span id="score_value">0</span></h1>
+          <h1 class="mdc-typography--headline5">LEVEL <span id="level_value">0</span></h1>
+        </div>
+        <div id="start">
+          <button id="start_btn" type="button" class="mdc-button upper_btn" name="button" onclick="start()">START</button>
+        </div>
+        <div id="pause">
+          <button id="pause_btn" type="button" class="mdc-button upper_btn" name="button" onclick="pause()">PAUSE</button>
+        </div>
+        <div id="mute_background">
+            <button type="button" id="mute_btn" class="mdc-icon-button" name="button" onclick="mute()">
+              <i id="mute_icon" class="material-icons">volume_off</i>
+            </button>
+        </div>
+
+
+        <div class="mdc-layout-gird btn_group" id="button_group">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell--span-12-desktop mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone btn">
+              <div>
+                <button type="button" class="mdc-icon-button  btnlis"  name="button" style="height:200px;width:200px;" onclick="click_direct('w')">
+                  <img id="img1" class="mdc-image-list__image btnimg" src="../res/images/mole_hole.png" style="height:150px;width:150px;" >
+                </button>
+              </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-2-phone btn">
+              <div>
+                <button type="button" class="mdc-icon-button  btnlis"  name="button" style="height:200px;width:200px;" onclick="click_direct('a')">
+                  <img id="img2" class="mdc-image-list__image btnimg" src="../res/images/mole_hole.png" style="height:150px;width:150px;" >
+                </button>
+              </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-2-phone btn">
+              <div>
+                <button type="button" class="mdc-icon-button"  name="button" style="height:200px;width:200px;" onclick="click_direct('s')">
+                  <img id="img3" class="mdc-image-list__image btnimg" src="../res/images/mole_hole.png" style="height:150px;width:150px;" >
+                </button>
+              </div>
+            </div>
+            <div class="mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone btn">
+              <div>
+                <button type="button" class="mdc-icon-button"  name="button" style="height:200px;width:200px;" onclick="click_direct('d')">
+                  <img id="img4" class="mdc-image-list__image" src="../res/images/mole_hole.png" style="height:150px;width:150px;" >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h1 class="mdc-typography--headline2" id="final"></h1>
+      </div>
+
+      <script type="text/javascript">
+      background();
+      </script>
+
+
+    </div>
+
+    <div id="warning_portrait" class="warning">
+      <img src="../res/images/warning_portrait.png" alt="">
+    </div>
+    <div id="warning_landscape" class="warning">
+      <img src="../res/images/warning_landscape.png" alt="">
+    </div>
+  </body>
+
+</html>

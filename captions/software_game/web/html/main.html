@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title>MOLE HUNTER</title>
+      <link rel="icon" href="../res/images/logo.png">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="../css/main.css">
+      <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+      <script type="text/javascript" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+      <script type="text/javascript">
+        @import "@material/icon-button/mdc-icon-button"
+
+        import {MDCRipple} from '@material/ripple';
+
+const iconButtonRipple = new MDCRipple(document.querySelector('.mdc-icon-button'));
+iconButtonRipple.unbounded = true;
+
+        @import "@material/image-list/mdc-image-list";
+        .my-image-list {
+  @include mdc-image-list-standard-columns(5);
+}
+      </script>
+    </head>
+    <body>
+      <header class="mdc-card">
+        <div class="mdc-layout-grid">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell--span-8-desktop mdc-layout-grid__cell---span-8-tablet mdc-layout-grid__cell--span-4-phone" >
+              <h3 class="mdc-typography--headline3" style="margin-top:10px;margin-bottom:-25px;">MOLE_hunter</h3>
+              <p class="mdc-typography--subtitle1" style="padding-left:175px;">made with div</p>
+            </div>
+
+            <div class="mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell---span-8-tablet mdc-layout-grid__cell--span-4-phone" style="margin-right:10px;">
+              <div class="mdc-tab-bar mdc-tab-scroller mdc-tab-scroller__scroll-area mdc-tab-scroller__scroll-content">
+                <button class="mdc-tab mdc-tab--active" type="button" name="button">HOME</button>
+                <button class="mdc-tab" type="button" name="button">DOWNLOAD</button>
+                <button class="mdc-tab" type="button" name="button">PLAY</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header><br>
+
+      <div class="mdc-card">
+        <img class="mdc-image-list__image" src="../res/images/night_sky.png" alt="">
+      </div>
+
+
+
+      <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-2-phone">
+            <h1 class="mdc-typography--headline5">hello</h1>
+            <p class="mdc-typography--subtitle1">hello every one this is a jockhello every one thois is a jock</p>
+          </div>
+
+          <div class="mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-2-phone">
+            <h1 class="mdc-typography--headline5">hello</h1>
+            <p class="mdc-typography--subtitle1">hello this is a jockhello this is a jock</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mdc-card">
+        <div class="mdc-layout-grid">
+          <h1 class="mdc-typography--headline5" style="text-align:center;">PLAY ONLINE</h1>
+          <div class="mdc-layout-gird__inner">
+            <div class="mdc-layout-grid__cell--span-12-desktop mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone">
+              <button type="button" class="mdc-icon-button" name="button" style="width:200px; height:200px;" >
+                <i class="material-icons" style="font-size:100px;">web</i><br>
+                <span>online</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+
+
+
+      <div class="mdc-card">
+        <div class="mdc-layout-grid">
+            <h1 class="mdc-typography--headline5" style="text-align:center;">DOWNLOAD</h1>
+          <div class="mdc-layout-grid__inner">
+
+            <div class="mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-2-phone" style="display:block;margin-left:auto;margin-right:auto;" >
+              <button type="button" id="btn" class="mdc-icon-button btn1" name="button" style="height:200px;width:200px;">
+                <i class="material-icons" style="font-size:100px;">desktop_windows</i>
+                <span>WINDOWS</span>
+              </button>
+            </div>
+            <div class="mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-tablet mdc-layout-grid__cell--span-2-phone" style="display:block;margin-left:auto;margin-right:auto;">
+              <button type="button" class="mdc-icon-button btn1" name="button" style="height:200px;width:200px;" >
+                <i class="material-icons" style="font-size:100px;">android</i>
+                <span>android</span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+
+      </div>
+
+      <div class="mdc-card">
+
+      </div>
+
+      <footer>
+        <div class="mdc-card" id="footer">
+          <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+              <div class="mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell-span-4-phone" id="contact_us">
+                <h1 class="mdc-typography--headline5" style="text-align:left;">CONTACT US:</h1>
+                <p class="mdc-typography--subtitle1">Email:vishvajeet10gfs@gmail.com</p>
+                <a href=""><img src="../res/images/facebook_logo.png" class="social_button"></i></a>
+                <a href=""><img src="../res/images/instagram_logo.png" class="social_button"></i></a>
+                <a href=""><img src="../res/images/twitter_logo.png" class="social_button"></i></a>
+              </div>
+              <div class="mdc-layout-grid__cell--span-8-desktop mdc-layout-grid__cell--span-6-tablet mdc-layout-grid__cell--span-4-phone" id="about_us">
+                <h1 class="mdc-typography--headline5" style="text-align:left;">ABOUT US:</h1>
+                <p class="mdc-typography--subtitle1">A group of enthusiasts wishing for a change</p>
+              </div>
+            </div>
+            <div class="mdc-layout-grid__inner" id="copyright">
+              <div class="mdc-layout-grid__cell--span-12-desktop mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-4-phone">
+                <h1 class="mdc-typography--subtitle1" style="text-align:center;">copyright@2019</h1>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </footer>
+
+    </body>
+  </html>
