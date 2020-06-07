@@ -30,5 +30,7 @@ jobs:
     - name: Run a multi-line script
       run: |
         wget "https://www.designite-tools.com/static/download/DJC/DesigniteJava.jar"
-        ls
+        git clone https://github.com/DotNetOpenAuth/DotNetOpenAuth.git
+        java -jar DesigniteJava.jar -i DotNetOpenAuth/ -o ./ -f XML
+        ls 
         
