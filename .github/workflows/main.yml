@@ -30,6 +30,7 @@ jobs:
     - name: Run a multi-line script
       run: |
         git clone https://github.com/tushartushar/DesigniteJava.git
+        cd DesigniteJava/src
         java -jar designitejava.jar -i "DesigniteJava" −o "C:\output\folder\path" -f XML
         echo Add other actions to build,
         echo test, and deploy your project.
