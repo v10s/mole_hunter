@@ -37,8 +37,12 @@ jobs:
     - name: Upload a C sharp project
       run: |
         wget "http://www.designite-tools.com/static/download/DesigniteSetup.msi"
+        sudo dpkg --add-architecture i386
+        wget -nc https://dl.winehq.org/wine-builds/winehq.key; sudo apt-key add winehq.key
+        sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
+        sudo add-apt-repository ppa:cybermax-dexter/sdl2-backport
+        sudo apt update && sudo apt install --install-recommends winehq-stable
         ls
-        sudo apt-get install wine
         wine start DesigniteSetup.msi
         ls
       
