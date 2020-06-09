@@ -38,6 +38,6 @@ jobs:
       run: |
         wget "http://www.designite-tools.com/static/download/DesigniteSetup.msi"
         ls
-        wine start DesigniteSetup.msi
+        msiexec start DesigniteSetup.msi
         ls
       
