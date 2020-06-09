@@ -38,7 +38,7 @@ jobs:
       run: |
         wget "http://www.designite-tools.com/static/download/DesigniteSetup.msi"
         ls
-        apt-get install wine
+        sudo apt-get install wine
         wine start DesigniteSetup.msi
         ls
       
