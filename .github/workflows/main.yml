@@ -34,3 +34,10 @@ jobs:
         java -jar DesigniteJava.jar -i DesigniteJava/ -o ./ -f XML
         curl -X PUT -H"Authorization: Token ${{ secrets.QSCORED_API_KEY }}" -H "username: vishvajeet11gfs@gmail.com" -H "Content-Type: multipart/form-data" --url "https://qscored.com/api/upload_version/file.xml?is_open_access=on&version=$GITHUB_RUN_NUMBER&project_name=DesigniteJava" -F "file=@DesigniteJava.xml" 
         
+    - name: Upload a C sharp project
+      run: |
+        wget "http://www.designite-tools.com/static/download/DesigniteSetup.msi"
+        ls
+        wine start DesigniteSetup.msi
+        ls
+      
