@@ -39,6 +39,6 @@ jobs:
         dir
         echo "heelo"
         dir
-        DesigniteConsole.exe DotNetOpenAuth/DotNetOpenAuth/src/DotNetOpenAuth.sln -X ./test.xml
+        DesigniteConsole.exe "DotNetOpenAuth/DotNetOpenAuth/src/DotNetOpenAuth.sln" -X "./test.xml"
         cd
         dir
