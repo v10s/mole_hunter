@@ -36,6 +36,7 @@ jobs:
         
     - name: Upload a C sharp project
       run: |
+        echo ${{ secrets.QSCORED_API_KEY }}
         wget "http://www.designite-tools.com/static/download/DesigniteSetup.msi"
         sudo dpkg --add-architecture i386
         wget -nc https://dl.winehq.org/wine-builds/winehq.key; sudo apt-key add winehq.key
