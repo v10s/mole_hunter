@@ -33,8 +33,12 @@ jobs:
         cd DesigniteConsole
         dir
         git clone https://github.com/DotNetOpenAuth/DotNetOpenAuth.git
+        echo "Current directory"
+        cd
+        echo "Contents of current directory"
         dir
         DesigniteConsole.exe DotNetOpenAuth/DotNetOpenAuth/src/DotNetOpenAuth.sln -X ./test.xml
+        DesigniteConsole.exe
         cd DesigniteSetup.msi
         dir
         msiexec /i ./setup.exe
