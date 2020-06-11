@@ -39,7 +39,7 @@ jobs:
         dir
         echo "heelo"
         dir
-        
-        docker run -it -rm DesigniteConsole.exe "DotNetOpenAuth/DotNetOpenAuth/src/DotNetOpenAuth.sln" -X "./test.xml"
+        docker run -it --rm microsoft/nanoserver powershell
+        DesigniteConsole.exe "DotNetOpenAuth/DotNetOpenAuth/src/DotNetOpenAuth.sln" -X "./test.xml"
         cd
         dir
