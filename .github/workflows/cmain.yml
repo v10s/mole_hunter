@@ -34,7 +34,7 @@ jobs:
         dir
         git clone https://github.com/DotNetOpenAuth/DotNetOpenAuth.git
         dir
-        DesigniteConsole.exe "DotNetOpenAuth/src/DotNetOpenAuth.sln" −X "."
+        DesigniteConsole.exe "DotNetOpenAuth/DotNetOpenAuth/src/DotNetOpenAuth.sln" −X "."
         cd DesigniteSetup.msi
         dir
         msiexec /i ./setup.exe
