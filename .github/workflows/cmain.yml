@@ -33,6 +33,12 @@ jobs:
         cd DesigniteConsole
         dir
         git clone https://github.com/DotNetOpenAuth/DotNetOpenAuth.git
-
+        dir
+        dir
+        dir
+        dir
+        echo "heelo"
+        dir
         DesigniteConsole.exe DotNetOpenAuth/DotNetOpenAuth/src/DotNetOpenAuth.sln -X ./test.xml
+        cd
         dir
