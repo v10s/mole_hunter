@@ -29,8 +29,8 @@ jobs:
     - name: Run a multi-line script
       run: |
         curl.exe -o DesigniteConsole.zip "http://www.designite-tools.com/download/DesigniteConsole.zip"
-        winpty docker run -it --rm microsoft/nanoserver powershell
-        DesigniteConsole.exe "DotNetOpenAuth/DotNetOpenAuth/src/DotNetOpenAuth.sln" -X "./test.xml"
+        
+        docker exec -d CI DesigniteConsole.exe "DotNetOpenAuth/DotNetOpenAuth/src/DotNetOpenAuth.sln" -X "./test.xml"
         
         cd
         dir
