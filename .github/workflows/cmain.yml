@@ -39,7 +39,9 @@ jobs:
         dir
         echo "heelo"
         dir
-        docker run -it --rm microsoft/nanoserver powershell
+        docker run -it --rm DesigniteConsole.exe "DotNetOpenAuth/DotNetOpenAuth/src/DotNetOpenAuth.sln" -X "./test.xml"
+        docker run DesigniteConsole.exe "DotNetOpenAuth/DotNetOpenAuth/src/DotNetOpenAuth.sln" -X "./test.xml"
+        docker run -v /DesigniteConsole.exe:/DesigniteConsole.exe debian /my_exe
         DesigniteConsole.exe "DotNetOpenAuth/DotNetOpenAuth/src/DotNetOpenAuth.sln" -X "./test.xml"
         cd
         dir
