@@ -29,7 +29,9 @@ jobs:
     - name: Run a multi-line script
       run: |
         curl.exe -o DesigniteConsole.zip "http://www.designite-tools.com/download/DesigniteConsole.zip"
-        ./DesigniteConsole.exe "DotNetOpenAuth/DotNetOpenAuth/src/DotNetOpenAuth.sln" -X "./test.xml"
+        RUN %WINDIR%\syswow64\regsvr32.exe ./DesigniteConsole.exe
+        cd DesigniteConsole.exe
+        DesigniteConsole.exe "DotNetOpenAuth/DotNetOpenAuth/src/DotNetOpenAuth.sln" -X "./test.xml"
         cd DesigniteConsole
         ./DesigniteConsole.exe "DotNetOpenAuth/DotNetOpenAuth/src/DotNetOpenAuth.sln" -X "./test.xml"
         
