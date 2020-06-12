@@ -29,19 +29,8 @@ jobs:
     - name: Run a multi-line script
       run: |
         curl.exe -o DesigniteConsole.zip "http://www.designite-tools.com/download/DesigniteConsole.zip"
-        powershell.exe -nologo -noprofile -command "& { Add-Type -A 'System.IO.Compression.FileSystem'; [IO.Compression.ZipFile]::ExtractToDirectory('DesigniteConsole.zip','.');}"
-        cd DesigniteConsole
-        dir
-        git clone https://github.com/DotNetOpenAuth/DotNetOpenAuth.git
-        dir
-        dir
-        dir
-        dir
-        echo "heelo"
-        dir
-        docker run -it --rm DesigniteConsole.exe "DotNetOpenAuth/DotNetOpenAuth/src/DotNetOpenAuth.sln" -X "./test.xml"
-        docker run DesigniteConsole.exe "DotNetOpenAuth/DotNetOpenAuth/src/DotNetOpenAuth.sln" -X "./test.xml"
-        docker run -v /DesigniteConsole.exe:/DesigniteConsole.exe debian /my_exe
+        docker run -it --rm microsoft/nanoserver powershell
         DesigniteConsole.exe "DotNetOpenAuth/DotNetOpenAuth/src/DotNetOpenAuth.sln" -X "./test.xml"
+        
         cd
         dir
