@@ -35,7 +35,7 @@ jobs:
         git clone https://github.com/jasontaylordev/NorthwindTraders.git
 
         
-        .\DesigniteConsole.exe "NorthwindTraders/NorthwindTraders.sln" -X "./test.xml"
+        .\DesigniteConsole.exe "NorthwindTraders/Northwind.sln" -X "./test.xml"
         
         cd
         dir
