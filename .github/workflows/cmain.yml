@@ -29,6 +29,7 @@ jobs:
     - name: Run a multi-line script
       run: |
         curl.exe -o DesigniteConsole.zip "http://www.designite-tools.com/download/DesigniteConsole.zip"
+        powershell.exe -nologo -noprofile -command "& { Add-Type -A 'System.IO.Compression.FileSystem'; [IO.Compression.ZipFile]::ExtractToDirectory('DesigniteConsole.zip','.');}"
 
         cd DesigniteConsole 
         .\DesigniteConsole.exe "DotNetOpenAuth/DotNetOpenAuth/src/DotNetOpenAuth.sln" -X "./test.xml"
