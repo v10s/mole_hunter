@@ -36,6 +36,5 @@ jobs:
 
         
         .\DesigniteConsole.exe "NorthwindTraders/Northwind.sln" -X "./test.xml"
-        
-        cd
         dir
+        
