@@ -30,8 +30,8 @@ jobs:
       run: |
         curl.exe -o DesigniteConsole.zip "http://www.designite-tools.com/download/DesigniteConsole.zip"
 
-        SET "PATH=DesigniteConsole;%DesigniteConsole%"
-        DesigniteConsole "DotNetOpenAuth/DotNetOpenAuth/src/DotNetOpenAuth.sln" -X "./test.xml"
+        cd DesigniteConsole 
+        .\DesigniteConsole.exe "DotNetOpenAuth/DotNetOpenAuth/src/DotNetOpenAuth.sln" -X "./test.xml"
         
         cd
         dir
