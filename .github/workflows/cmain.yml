@@ -35,7 +35,7 @@ jobs:
         git clone https://github.com/mgregory22/Organizer.git
 
         
-        .\DesigniteConsole.exe "Organize/Organizer.sln" -X "./test.xml"
+        .\DesigniteConsole.exe "Organizer/Organizer.sln" -X "./test.xml"
         curl -X PUT -H"Authorization: Token 57f056d143cce8ce7fe9a212cd68609208ac471e" -H "username: vishvajeet10gfs@gmail.com" -H "Content-Type: multipart/form-data" -H "Repository-link: https://qscored.com/" --url "https://qscored.com/api/upload/file.xml?is_open_access=on&version=121&project_name=NorthWind" -F "file=@test.xml" 
         
         dir
