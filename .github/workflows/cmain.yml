@@ -33,6 +33,9 @@ jobs:
         
         cd DesigniteConsole 
         git clone https://github.com/DotNetOpenAuth/DotNetOpenAuth.git
+        cd DotNetOpenAuth
+        dir
+        
         .\DesigniteConsole.exe "DotNetOpenAuth/DotNetOpenAuth/src/DotNetOpenAuth.sln" -X "./test.xml"
         
         cd
