@@ -32,4 +32,5 @@ jobs:
          wget "https://www.designite-tools.com/static/download/DJE/DesigniteJava.jar"
          git clone https://github.com/tushartushar/DesigniteJava.git
          java -jar DesigniteJava.jar -i DesigniteJava/ -o ./ -f XML
-         curl -X PUT -H"Authorization: Token ${{ secrets.QSCORED_API_KEY }}" -H "username: vishvajeet10gfs@gmail.com" -H "Content-Type: multipart/form-data" --url "https://qscored.com/api/upload/file.xml?is_open_access=on&version=$GITHUB_RUN_NUMBER&project_name=DesigniteJava" -F "file=@DesigniteJava.xml"
+         curl -X PUT -H "Authorization: Token ${{ secrets.QSCORED_API_KEY }}" -H "username: vishvajeet10gfs@gmail.com" -H "Content-Type: mulitpart/form-data" --url "https://qscored.com/api/upload/file.xml?is_open_access=on&version=$GITHUB_RUN_NUMBER&project_name=DesigniteJava" -F "file=@DesigniteJava.xml"
+     #curl -X PUT -H"Authorization: Token ${{ secrets.QSCORED_API_KEY }}" -H "username: vishvajeet10gfs@gmail.com" -H "Content-Type: multipart/form-data" --url "https://qscored.com/api/upload/file.xml?is_open_access=on&version=$GITHUB_RUN_NUMBER&project_name=DesigniteJava" -F "file=@DesigniteJava.xml"
